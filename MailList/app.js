@@ -27,8 +27,7 @@ app.post("/",function(req,res){
         ]
     };
     const d=JSON.stringify(data);  //convert data from json to pass as req to site
-    const apiKey="c381dfae3a5d5408bed6d0ceaa7bd8c3-us5";
-    const listId="221751c3e0";
+    
     const url="https://us5.api.mailchimp.com/3.0/lists/"+listId;
 
     const options={ //follow documentation and set respective paras
