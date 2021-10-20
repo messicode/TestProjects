@@ -12,7 +12,7 @@ app.get("/",function(req,res){
 app.post("/",function(req,res){
     
     const loc=req.body.loc;
-    const apiKey="fe750ce01737114d7d2fdbdea32d46e9";
+
     const url="https://api.openweathermap.org/data/2.5/weather?q="+loc+"&appid="+apiKey;
     https.get(url,function(rs){
         rs.on("data",function(data){
