@@ -56,7 +56,7 @@ app.post("/",function(req,res){
 app.post("/fail",function(req,res){
     res.redirect("/");
 })
-//git key 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
+
 app.listen(process.env.PORT || 3000,()=>{     //listen on port set by heroku or local 3000
     console.log("Listening on 3000");
 })
